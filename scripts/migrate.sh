@@ -31,9 +31,9 @@ fi
 
 if [ "$STATE" == "u" ]; then
     echo "Running Goose migrations up!"
-    goose -dir internal/database/schema "${DB_TYPE}" "${DATABASE_URL}" up
+    goose -dir "${PATH_TO_SCHEMA}" "${DB_TYPE}" "${DATABASE_URL}" up
 else
     echo "Running goose migrations down"
-    goose -dir internal/database/schema "${DB_TYPE}" "${DATABASE_URL}" down
+    goose -dir "${PATH_TO_SCHEMA}" "${DB_TYPE}" "${DATABASE_URL}" down
 
 fi
