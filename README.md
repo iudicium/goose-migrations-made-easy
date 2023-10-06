@@ -1,2 +1,11 @@
 # goose-migrations-made-easy
-goose migrations script that saves time
+Goose migrations script that saves time
+
+
+# Usage
+
+Adjust your env variables.
+
+```./scripts/migrate.sh```  Migration up
+
+```./scripts/migrate.sh -s d``` Migration down
